@@ -1,0 +1,96 @@
+---
+title: "Energía - ENEL"
+author: "Antonia Banduc Retamal"
+format: html
+editor: visual
+---
+
+```{r configuraciones}
+#| message: false
+#| echo: false
+# Esto ya debiera estar cargado en el proyecto en posit.cloud
+# devtools::install_github("business-science/tidyquant")
+# Loads tidyquant, lubridate, xts, quantmod, TTR, and PerformanceAnalytics
+library(tidyverse)
+library(tidyquant)  
+```
+
+## Descripción Activo y Contexto (Hito 1)
+
+Fecha de entrega: Jueves 28 de Septiembre 23:59.
+
+### Definición
+
+El sector de la energía en Chile es como un motor que proporciona electricidad para los hogares y empresas del país. En los últimos años, ha experimentado un aumento significativo de inversiones tanto nacionales como internacionales. Estas inversiones se han dirigido principalmente hacia proyectos de energías renovables, como parques solares y eólicos, con el objetivo de hacer que la energía sea más limpia y eficiente.
+
+Este sector también impacta directamente en las finanzas de las personas y las empresas chilenas. Las tarifas eléctricas y los precios de la energía son aspectos cruciales, ya que influyen en cuánto deben pagar por la electricidad que consumen. Todo esto ocurre en un mercado en el que varias compañías compiten por ofrecer electricidad a precios competitivos.
+
+Para financiar y desarrollar estos proyectos energéticos, se requiere una inversión sustancial. Esta inversión proviene de diversas fuentes, como inversores privados, instituciones financieras y, en algunos casos, el gobierno. Además, Chile tiene la posibilidad de exportar excedentes de electricidad a países vecinos, lo que puede ser una fuente adicional de ingresos.
+
+Sin embargo, este sector también presenta desafíos financieros. Los precios de la electricidad pueden experimentar fluctuaciones que afectan la estabilidad económica de las empresas involucradas. Además, la generación de energía solar y eólica depende en gran medida de las condiciones climáticas, lo que puede generar cierta variabilidad en la producción.
+
+En la actualidad, existe una creciente preocupación por la sostenibilidad ambiental. Por ello, algunas empresas del sector buscan financiamiento para proyectos que sean respetuosos con el medio ambiente, como la generación de energía solar y eólica. También emiten "bonos verdes" para atraer a inversionistas comprometidos con la conservación del planeta.
+
+### Motivación
+
+En los últimos años, las inversiones en energías renovables han florecido, atrayendo aproximadamente 4.700 millones de dólares de inversión extranjera directa en 2020, según el Ministerio de Energía. Este sector representa una parte significativa del PIB chileno, contribuyendo aproximadamente con el 2.5%, según el Banco Central de Chile.
+
+Los precios de la energía eléctrica, con un promedio de alrededor de 74 dólares por MWh en 2020, son una preocupación clave tanto para consumidores como empresas. Además, Chile tiene la capacidad de exportar energía a países vecinos, generando alrededor de 200 millones de dólares en exportaciones eléctricas en ese mismo año.
+
+La inversión en eficiencia energética también es notable, con aproximadamente 150 millones de dólares invertidos en proyectos y programas de eficiencia en 2020.
+
+Estos números demuestran la relevancia económica del sector energético chileno, lo que motiva a la investigación para comprender mejor cómo estas cifras se relacionan y cómo impactan en la economía del país y en la vida de sus habitantes.
+
+### Contexto
+
+Los datos revelan que este activo ha experimentado una sesión de negociación con cierta volatilidad, a pesar de que el precio de apertura y el precio de cierre anterior son idénticos, lo que indica una estabilidad relativa entre sesiones. Sin embargo, durante la sesión actual, el activo ha oscilado en un rango significativo, desde un mínimo de 6,173.10 hasta un máximo de 6,326.00. Esto sugiere que los inversores pueden estar evaluando noticias o eventos que están influyendo en la actividad del mercado.
+
+En el contexto más amplio, el activo ha mantenido una estabilidad relativa en el último año, con un rango de 52 semanas que muestra un mínimo de 5,380.30 y un máximo de 6,990.00. Esta estabilidad podría indicar un comportamiento constante y una posible confianza en el activo por parte de los inversores.
+
+El volumen de negociación actual, que es significativamente mayor que el promedio diario, señala un alto interés en el activo durante esta sesión. Esto podría estar relacionado con eventos o noticias que están generando un aumento en la actividad del mercado y atrayendo la atención de los inversores.
+
+La capitalización bursátil de 8.097T coloca a este activo en la categoría de empresas de gran envergadura en su sector, lo que podría atraer la atención de inversores institucionales y fondos de inversión.
+
+El valor de beta de 0.72 indica que el activo ha tenido una volatilidad moderada en comparación con el mercado en los últimos 5 años. Esta estabilidad relativa podría hacerlo atractivo para inversores que buscan un nivel de riesgo más bajo en sus inversiones.
+
+En términos de valoración, el PE Ratio (TTM) de 13.49 sugiere que las acciones se negocian a un precio razonable en relación con las ganancias de la empresa en el último año. Además, el EPS (TTM) de 461.78 refleja ganancias sólidas por acción.
+
+El rendimiento de dividendos del 7.13% es atractivo para inversores en busca de ingresos pasivos. La fecha ex-dividendo reciente y la próxima fecha de ganancias son factores importantes a considerar para los inversores interesados en dividendos.
+
+Finalmente, la estimación de objetivo a 1 año de 7,255.91 sugiere un potencial de crecimiento según algunas estimaciones. Sin embargo, los inversores deben evaluar estos datos junto con otros factores, como el entorno económico y las tendencias del mercado, antes de tomar decisiones de inversión.
+
+![](photos/summary.png){fig-align="center"}
+
+### Análisis de Largo Plazo
+
+#### Caracterización deuda
+
+Hasta marzode 2023, Empresas Copec S.A. había emitido un total de US\$1.400 millones en deuda, compuesta principalmente por bonos corporativos y préstamos bancarios. Esta deuda tenía una variedad de plazos, que abarcaban desde deuda de corto plazo hasta instrumentos de largo plazo. Las tasas de interés asociadas a estas emisiones variaban según los términos específicos de cada transacción. Además, Copec ha mantenido una sólida calificación crediticia otorgada por agencias de calificación reconocidas, lo que refleja su capacidad de gestionar sus obligaciones financieras de manera eficiente.
+
+![](photos/emisionbonos1.png){fig-align="center"}
+
+#### ![](photos/emisionbonos2.png)
+
+#### Caracterización de emisiones históricas (Aplicación cap. 20)
+
+Con respecto al riesgo de depósitos a plazo, pactos y fondos mutuos, la subsidiaria Arauco cuenta con una política de colocaciones que minimiza este riesgo, entregando directrices para hacer gestión sobre excedentes de caja en instituciones de bajo riesgo. La política identifica y limita los instrumentos financieros y las entidades en la cual Celulosa Arauco y Constitución S.A. están autorizadas a invertir.
+
+Cabe señalar que la gestión de tesorería es manejada de manera centralizada en Chile para las operaciones. Corresponde a la Matriz realizar las operaciones de inversión y colocación de excedentes de caja y suscripciones de deuda de corto y largo plazo con bancos, instituciones financieras y público. En caso de que se deba realizar una suscripción de deuda de corto o largo plazo a través de otra empresa, la operación requerirá la expresa autorización del Gerente Corporativo de Finanzas de Arauco. En cuanto a los instrumentos, solo está permitida la inversión en aquellos de renta fija y adecuada liquidez. Cada tipo de instrumento tiene una clasificación y límites determinados, dependiendo de la duración y del emisor.
+
+En relación a los intermediarios (bancos, agencias de valores y corredoras de fondos mutuos, debiendo ser estas dos últimas subsidiarias de entidades bancarias), se utiliza una metodología que tiene como propósito determinar el grado de riesgo relativo que identifica a cada banco u otra entidad en cuanto a sus estados financieros y títulos representativos de deuda y patrimonio, a través de la asignación de distintos puntajes, que determinan finalmente un ranking con el riesgo relativo que representa cada uno y que Arauco utiliza para definir los límites de inversión en ellos.
+
+#### Relación con activos derivados
+
+Los activos financieros a valor razonable incluyen instrumentos de renta fija (bonos de empresas, letras hipotecarias, bonos bancarios, depósitos a plazo y otros) que son administrados para la sociedad por terceros ("carteras tercerizadas"). Estos activos se registran al valor razonable, reconociéndose los cambios de valor en la cuenta de resultados, y se mantienen para contar con liquidez y rentabilizarla. Los fondos mutuos se contabilizan al valor de mercado a través del valor cuota al cierre del periodo.
+
+Los swaps son principalmente instrumentos de cobertura cross currency swaps contratados para cubrir la exposición al tipo de cambio, que surge de tener deudas en monedas distintas a las funcionales.
+
+Los forwards son inicialmente reconocidos a valor razonable en la fecha en la cual el contrato es suscrito y son posteriormente remedidos a valor razonable. Los forwards son registrados como activos cuando el valor razonable es positivo y como pasivos cuando el valor razonable es negativo.
+
+El valor razonable de contratos forward de moneda es calculado en referencia a los tipos de cambio forward actuales de contratos con similares perfiles de vencimiento.
+
+Al 31 de marzo de 2022 y 31 de diciembre de 2021, el Grupo no presenta inversiones mantenidas hasta el vencimiento.
+
+![](photos/derivados1.png)
+
+![](photos/derivados2.png)
