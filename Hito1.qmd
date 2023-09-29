@@ -94,3 +94,33 @@ Al 31 de marzo de 2022 y 31 de diciembre de 2021, el Grupo no presenta inversion
 ![](photos/derivados1.png)
 
 ![](photos/derivados2.png)
+
+### Reporte grupal
+
+Para la determinación de los pesos del portafolio compuesto por las acciones del grupo, se buscó calcular el portafolio tangencial. Entonces, con los retornos esperados $\mathbf{\mu}$ y la matriz de covarianza de los activos que componen el portafolio $\mathbf{\Sigma}$, se calcularon los pesos $\mathbf{w}$ de cada activo. El problema de optimización a maximizar fue el siguiente:
+
+$$
+\max_{\mathbf{w}} \left\{\mathbf{\mu} - \delta \mathbf{w}^{\intercal}\mathbf{\Sigma}\mathbf{w} \right\}
+$$
+Sujeto a:
+\begin{align}
+&\sum_{i} w_{i} = 1 &\\
+&0\leq w_{i}\leq 1 &
+\end{align}
+
+Si bien no se está maximizando el ratio de *Sharpe* necesariamente, se penaliza la función objetivo con un grado $\delta$ a la función objetivo por la varianza del portafolio. Luego, de acuerdo al factor de penalización se puede definir un portafolio con mayor o menor grado de aversión al riesgo, pues mientras mayor sea el factor, más se penalizará la función objetivo en función del riesgo y viceversa.
+
+En este caso, se decidió tomar un perfil de inversión conservador, dada la recesión que vive la economía chilena en la actualidad. También, se decidió que la información a utilizar para calcular los retornos y sus varianzas sería a partir del 2021, con el fin de considerar los últimos efectos de la pandemia y no la pandemia en su totalidad, por ser un evento muy aislado que altera los resultados. También, se consideró este horizonte de información por ser una inversión a corto plazo, y por lo tanto es mejor considerar las situaciones más recientes de los activos que toda la información histórica, pues la información reciente es más representativa.
+
+Con todo esto, fue posible obtener la información de los retornos, definir el grado del factor de penalización y maximizar los retornos en función del riesgo asumido. Así, los resultados de los pesos de cada activo en el portafolio fueron los siguientes:
+|Acción         |Pesos|
+|:--------------|-----|
+|Banco de Chile |68.3%|
+|Parque Arauco  |10.3%|
+|COPEC          |21.4%|
+:Composición del portafolio.
+
+Cuyo rendimiento esperado es de 1.113%.
+.
+
+
